@@ -2,6 +2,8 @@
   --whiteColor: white;
   --blackColor: black;
   --blackGreyColor: rgb(27, 27, 27);
+  --greyColor: rgb(181, 181, 181);
+  --greyHoverColor: rgb(145, 145, 145);
 
   // sizing
   --xs-sizing: 8px;
@@ -12,14 +14,22 @@
   --xxl-sizing: 120px;
 }
 
+// Allisya Font
+@font-face {
+  font-family: "Ginthul";
+  src: url("./src/fonts/Ginthul-w16z3.ttf");
+  font-weight: 200;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Ginthul";
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Ginthul";
 }
 
 h1 {
@@ -29,14 +39,14 @@ h1 {
   color: var(--whiteColor);
 }
 
-button {
-  margin-top: var(--l-sizing);
-  background-color: var(--blackGreyColor);
-  color: var(--whiteColor);
-  border: none;
-  cursor: pointer;
-  font-size: var(--m-sizing);
-  &:hover {
-    background-color: var(--blackColor);
-  }
-}
+// button {
+//   margin-top: var(--l-sizing);
+//   background-color: var(--greyColor);
+//   color: var(--whiteColor);
+//   border: none;
+//   cursor: pointer;
+//   font-size: var(--m-sizing);
+//   &:hover {
+//     background-color: var(--greyHoverColor);
+//   }
+// }
